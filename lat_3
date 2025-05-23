@@ -1,0 +1,16 @@
+fname = input("Enter a file name: ")
+
+fhand = open(fname)
+
+jam_count = dict()
+
+for line in fhand:
+    if line.startswith("From "): 
+        parts = line.split()
+        if len(parts) >= 6:
+            waktu = parts[5]
+            jam = waktu.split(':')[0]
+            jam_count[jam] = jam_count.get(jam, 0) + 1
+
+for jam, jumlah in sorted(jam_count.items()):
+    print(jam, jumlah)
