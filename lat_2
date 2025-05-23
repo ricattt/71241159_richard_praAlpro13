@@ -1,0 +1,14 @@
+Data = ('Matahari Bhakti Nendya', '22064091', 'Bantul, DI Yogyakarta')
+
+nama, nim, asal = Data
+
+print("NIM:", nim)
+print("Nama:", nama)
+print("Asal:", asal)
+print()
+
+nim_t = tuple(nim)
+nam_sp = nama.split()
+print("NIM:", nim_t)
+print("Nama Depan:", tuple(nam_sp[0]))
+print("Nama Balik:", nam_sp[::-1])
