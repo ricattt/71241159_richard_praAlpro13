@@ -1,0 +1,11 @@
+tA = (90, 90, 90)
+
+awal = tA[0]
+sama = True
+
+for i in tA:
+    if i != awal:
+        sama = False
+        break
+        
+print(sama)
